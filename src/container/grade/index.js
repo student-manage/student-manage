@@ -1,12 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component,useState,useEffect } from 'react'
+import styles from './grade.css'
 
-class Grade extends Component {
-    state = {}
-    render() {
-        return (
-            <div>Grade</div>
-        );
-    }
+
+function Grade(){
+    return(
+        <div>
+            Grade
+        </div>
+    )
 }
 
-export default (Grade);
+export default Grade;
