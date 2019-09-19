@@ -59,18 +59,48 @@ body,html{
         display: flex;
     }
     :global(.choose_left){
+        width:0.4rem;
         padding:2.7rem 4.3rem;
     }
+    :global(.choose_left>span){
+        width:15.3rem;
+        display: flex;
+    }
     :global(.choose_right){
+        width:100%;
         padding:2.7rem 4.3rem;
     }
     :global(.choose_right>ul){
         width:100%;
-        height:14.4rem;
+        height:4.4rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    :global(.choose_right>ul li){
+        width:6.1rem;
+        height:2.4rem;
+        line-height: 2.4rem;
+        text-align:center;
+        background: #ccc;
+        border:1px solid #000;
+        margin-left:0.3rem;
+        margin-top:0.3rem;
+    }
+    :global(.choose_right>ul li:nth-child(1)){
+       background: #1890FF;
+    }
+    :global(.people_roll){
+        width:100%;
+        height: 6rem;
         display: flex;
     }
-    /* :global(.people_roll){
-        width:100%;
-        height: 14.4rem;
-    } */
+    :global(.roll_left){
+        width:5.6rem;
+        padding:0rem 4.3rem;
+    }
+    :global(.roll_right){
+        flex:1;
+        display: flex;
+        justify-content: space-between;
+    }
 }
