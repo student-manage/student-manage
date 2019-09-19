@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+body,html{
+    width:100%;
+    height: 100%;
+}
+    :global(#root){
+    width:100%;
+    height:100%;
+}
+:global(.wrap){
+    width:100%;
+    height:100%;
+    background: #ccc;
+}
+@media screen and (max-width:1024px){
+:global(.page_top){
+    width:100%;
+    height:30.2rem;
+    display:flex;
+    flex-direction: column;
+}
+:global(.page_top_top){
+    width:100%;
+    height: 10rem;
+    background: #0076FF;
+}
+:global(.page_top_bottom){
+    width:100%;
+    height:20.2rem;
+    background: #fff;
+}
+:global(.page_bottom){
+    width:100%;
+    flex:1
+}
+    :global(.page_top_top span){
+        left: 0rem;
+        top: 0rem;
+        line-height: 4.1rem;
+        background-color: rgba(0, 118, 255, 1);
+        color: rgba(255, 255, 255, 1);
+        font-size: 2.8rem;
+        text-align: center;
+        font-family: Roboto;
+        border: 0.1rem solid rgba(187, 187, 187, 1);
+        width:100%;
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    :global(.choose){
+        width:100%;
+        height: 14.4rem;
+        display: flex;
+    }
+    :global(.choose_left){
+        padding:2.7rem 4.3rem;
+    }
+    :global(.choose_right){
+        padding:2.7rem 4.3rem;
+    }
+    :global(.choose_right>ul){
+        width:100%;
+        height:14.4rem;
+        display: flex;
+    }
+    /* :global(.people_roll){
+        width:100%;
+        height: 14.4rem;
+    } */
+}
