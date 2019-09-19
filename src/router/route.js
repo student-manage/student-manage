@@ -1,10 +1,10 @@
-import home from "../container/home";
-import user from "../container/user";
-import login from "../container/user/login";
-import registry from "../container/user/registry";
-import show from "../container/show";
-import president from "../container/president";
-import grade from "../container/grade";
+import home from "@/container/home";
+import user from "@/container/user";
+import login from "@/container/user/login";
+import registry from "@/container/user/registry";
+import show from "@/container/show";
+import president from "@/container/president";
+import grade from "@/container/grade";
 
 const route = [
   {
