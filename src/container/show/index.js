@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import styles from './index.css'
 class Show extends Component {
     state = {}
     render() {
@@ -9,4 +9,4 @@ class Show extends Component {
     }
 }
 
-export default (Show);
+export default Show;
