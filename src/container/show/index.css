@@ -2,13 +2,21 @@
     margin: 0;padding: 0;
 }
 @media screen and (min-width:1024px) and (max-width:2000px){
+    .EcharSLxt{
+        width:90%;
+        height:605px;
+        margin:20px auto;
+        background:#fff
+    }
     .showLxt{
-        width: 1440px;
+        width: 100%;
+        overflow: hidden;
         height: auto;
         margin: 0 auto;
         background: #F5F5F5;
     }
     .HshowHeaderLxt{
+        float: left;
         width: 100%;
         height: 100px;
         left: 0px;
@@ -23,18 +31,625 @@
     }
     .showNavLxt{
         margin: 21px auto;
-        width: 1350px;
+        width: 95%;
         height: 126px;
         line-height: 20px;
-        text-align: center;
+        /* text-align: center; */
         border: 1px solid rgba(187, 187, 187, 1);
+        display: flex;
+        /* justify-content: space-around; */
+        align-items: center;
+    }
+    .showNavLxt>ul{
+        width: 60%;
+        height: 50px;
+        /* background: dimgrey; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 20%;
+    }
+    .showNavLxt>ul>.lis{
+        background: #1890FF;
+    }
+    .showNavLxt>ul>li{
+        width: 103px;
+        height: 50px;
+        border: 1px solid #A3D0FD;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 4px;
+        background: #E6F1FC;
+        color: #1890FF;
+    }
+    .showNavLxt>ul>.lisActive{
+        background: #1890FF;
+        color: #fff;
+    }
+    .showNavLxt>ul>li:nth-child(1){
+        border: 0px;
+        background: #F5F5F5;
+        color: #000;
+    }
+    .showNavLxt>ul>.btnLisLxt{
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background: #F5F5F5;
+        color: #000;
+    }
+    .sectionsLxt{
+        margin: 21px auto;
+        width: 95%;
+        height: 45px;
+        display: flex;
+        align-items: center;
+    }
+    .sectionsLxt>p{
+        width: 13%;
+        height: 30px;
+        margin-top: 15px;
+        text-align: center;
+        line-height: 30px;
+    }
+    .sectionsLxt>input{
+        width: 240px;
+        height: 40px;
+        margin-right: 2%;
+        border: 0.5px dashed #ccc;  /* dashed 虚线 */
+        outline: none;/* 去掉input外边框的 蓝色线 */
+        border-radius: 4px;
+    }
+    .sectionsLxt>button{
+        width: 95px;
+        height: 40px;
+        margin-right: 2%;
+        border-radius: 4px;
+        border: 0;  
+        border: 1px solid #A3D0FD;
+        background: #E6F1FC;
+        color: #1890FF;
+    }
+    .footerLxt{
+        width: 90%;
+        height: 45px;
+        background: #D0D0D0;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footerLxt>p{
+        width: 30%;
+        height: 35px;
+        line-height: 35px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footerLxt>p>span{
+        border:0.5px solid #ccc;
+        background: #fff;
+        border-radius: 4px;
+        padding: 0 25px;
+    }
+    .kuangLxt{
+        width: 500px;
+        height: 300px;
+        border: 1px solid #ccc;
+        background: #fff;
+        position: fixed;
+        /* flex-direction: column;
+        display: flex;
+        justify-content: space-around;
+        align-items: center; */
+        top:35%;
+        left: 35%;
+        transition: all 2s;
+    }
+    .kuangLxt>.ps>{
+        width: 90%;
+        height: 35px;
+        margin: 5px auto;
+    }
+    .kuangLxt>.ps>.timeLxt{
+        width: 75%;
+        height: 35px;
+        outline: none;
+    }
+    .kuangLxt>.ps>.timeBtn{
+        width: 15%;
+        height: 35px;
+        background: #E6F1FC;
+        color: #1890FF;
+        outline: none;
+        border:0;
+    }
+    .kuangLxt>.strFalg{
+        width: 90%;
+        height: 150px;
+    }
+    .kuangLxt>.strFalg>p>{
+        width: 100%;
+        height: 35px;
+    }
+    .kuangLxt>.strFalg>p>input{
+        width: 75%;
+        height: 35px;
+        outline: none;
+        margin: 0 20px;
+    }
+    .kuangLxt>.strFalg>p>textarea{
+        width: 75%;
+        height: 50px;
+        outline: none;
+        margin: 0 20px;
+    }
+    .kuangLxt>.kuangFoot{
+        width: 85%;
+        height: 45px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .kuangLxt>.kuangFoot>.btnOk{
+        width: 15%;
+        height: 35px;
+        background: #1890FF;
+        color: #E6F1FC;
+        outline: none;
+        border:0;
+    }
+    .kuangLxt>.kuangFoot>.btnNo{
+        width: 15%;
+        height: 35px;
+        background: #E6F1FC;
+        color: #1890FF;
+        outline: none;
+        border:0;
     }
 }
 
 @media screen and (min-width:751px) and (max-width:1023px){
-    
+    .EcharSLxt{
+        width:90%;
+        height:540px;
+        margin:20px auto;
+        background:#fff
+    }
+    .showLxt{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        margin: 0 auto;
+        background: #F5F5F5;
+    }
+    .HshowHeaderLxt{
+        float: left;
+        width: 100%;
+        height: 100px;
+        left: 0px;
+        top: 0px;
+        line-height: 100px;
+        background-color: rgba(0, 118, 255, 1);
+        color: rgba(255, 255, 255, 1);
+        font-size: 28px;
+        text-align: center;
+        font-family: Roboto;
+        border: 1px solid rgba(187, 187, 187, 1);
+    }
+    .showNavLxt{
+        margin: 21px auto;
+        width: 95%;
+        height: 85px;
+        line-height: 20px;
+        /* text-align: center; */
+        border: 1px solid rgba(187, 187, 187, 1);
+        display: flex;
+        /* justify-content: space-around; */
+        align-items: center;
+    }
+    .showNavLxt>ul{
+        width: 60%;
+        height: 50px;
+        /* background: dimgrey; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 20%;
+    }
+    .showNavLxt>ul>.lis{
+        background: #1890FF;
+    }
+    .showNavLxt>ul>li{
+        width: 90px;
+        height: 35px;
+        font-size: 12px;
+        border: 1px solid #A3D0FD;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 4px;
+        background: #E6F1FC;
+        color: #1890FF;
+    }
+    .showNavLxt>ul>.lisActive{
+        background: #1890FF;
+        color: #fff;
+    }
+    .showNavLxt>ul>li:nth-child(1){
+        border: 0px;
+        background: #F5F5F5;
+        color: #000;
+    }
+    .showNavLxt>p{
+        font-size: 12px;
+    }
+    .showNavLxt>ul>.btnLisLxt{
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background: #F5F5F5;
+        color: #000;
+    }
+    .sectionsLxt{
+        margin: 21px auto;
+        width: 95%;
+        height: 35px;
+        display: flex;
+        align-items: center;
+    }
+    .sectionsLxt>p{
+        width: 13%;
+        height: 30px;
+        margin-top: 10px;
+        text-align: center;
+        line-height: 30px;
+    }
+    .sectionsLxt>input{
+        width: 200px;
+        height: 30px;
+        margin-right: 2%;
+        border: 0.5px dashed #ccc;  /* dashed 虚线 */
+        outline: none;/* 去掉input外边框的 蓝色线 */
+        border-radius: 4px;
+    }
+    .sectionsLxt>button{
+        width: 70px;
+        height: 30px;
+        margin-right: 2%;
+        border-radius: 4px;
+        border: 0;  
+        border: 1px solid #A3D0FD;
+        background: #E6F1FC;
+        color: #1890FF;
+    }
+    .footerLxt{
+        width: 90%;
+        height: 35px;
+        background: #D0D0D0;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footerLxt>p{
+        width: 50%;
+        height: 25px;
+        line-height: 25px;
+        margin-top: 10px;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footerLxt>p>span{
+        width: 50%;
+        border:0.5px solid #ccc;
+        background: #fff;
+        border-radius: 4px;
+        font-size: 12px;
+        text-align: center;
+        padding: 0 15px;
+    }
+    .kuangLxt{
+        width: 320px;
+        height: 222px;
+        border: 1px solid #ccc;
+        background: #fff;
+        position: fixed;
+        /* flex-direction: column;
+        display: flex;
+        justify-content: space-around;
+        align-items: center; */
+        top:35%;
+        left: 35%;
+        transition: all 2s;
+    }
+    .kuangLxt>.ps>{
+        width: 90%;
+        height: 35px;
+        margin: 5px auto;
+    }
+    .kuangLxt>.ps>.timeLxt{
+        width: 70%;
+        height: 30px;
+        outline: none;
+    }
+    .kuangLxt>.ps>.timeBtn{
+        width: 20%;
+        height: 30px;
+        background: #E6F1FC;
+        color: #1890FF;
+        outline: none;
+        border:0;
+    }
+    .kuangLxt>.strFalg{
+        width: 90%;
+        height: 95px;
+    }
+    .kuangLxt>.strFalg>p>{
+        width: 100%;
+        height: 30px;
+        font-size: 12px;
+        line-height: 30px;
+    }
+    .kuangLxt>.strFalg>p>input{
+        width: 70%;
+        height: 30px;
+        outline: none;
+        margin: 0 20px;
+    }
+    .kuangLxt>.strFalg>p>textarea{
+        width: 60%;
+        height: 40px;
+        outline: none;
+        margin: 0 20px;
+    }
+    .kuangLxt>.kuangFoot{
+        width: 85%;
+        height: 40px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .kuangLxt>.kuangFoot>.btnOk{
+        width: 15%;
+        height: 25px;
+        background: #1890FF;
+        color: #E6F1FC;
+        outline: none;
+        border:0;
+    }
+    .kuangLxt>.kuangFoot>.btnNo{
+        width: 15%;
+        height: 25px;
+        background: #E6F1FC;
+        color: #1890FF;
+        outline: none;
+        border:0;
+    }
 }
 
 @media screen and (min-width:10px) and (max-width: 750px){
-    
+    .EcharSLxt{
+        width:90%;
+        height:540px;
+        margin:20px auto;
+        background:#fff
+    }
+    .showLxt{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+        background: #F5F5F5;
+    }
+    .HshowHeaderLxt{
+        float: left;
+        width: 100%;
+        height: 3rem;
+        left: 0px;
+        top: 0px;
+        line-height: 3rem;
+        background-color: rgba(0, 118, 255, 1);
+        color: rgba(255, 255, 255, 1);
+        font-size: 1rem;
+        text-align: center;
+        font-family: Roboto;
+        border: 1px solid rgba(187, 187, 187, 1);
+    }
+    .showNavLxt{
+        margin: 0.2rem auto;
+        width: 95%;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        /* text-align: center; */
+        border: 1px solid rgba(187, 187, 187, 1);
+        display: flex;
+        /* justify-content: space-around; */
+        align-items: center;
+    }
+    .showNavLxt>ul{
+        width: 60%;
+        height: 50px;
+        /* background: dimgrey; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 20%;
+    }
+    .showNavLxt>ul>.lis{
+        background: #1890FF;
+    }
+    .showNavLxt>ul>li{
+        width: 90px;
+        height: 35px;
+        font-size: 12px;
+        border: 1px solid #A3D0FD;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 4px;
+        background: #E6F1FC;
+        color: #1890FF;
+    }
+    .showNavLxt>ul>.lisActive{
+        background: #1890FF;
+        color: #fff;
+    }
+    .showNavLxt>ul>li:nth-child(1){
+        border: 0px;
+        background: #F5F5F5;
+        color: #000;
+    }
+    .showNavLxt>p{
+        font-size: 12px;
+    }
+    .showNavLxt>ul>.btnLisLxt{
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background: #F5F5F5;
+        color: #000;
+    }
+    .sectionsLxt{
+        margin: 21px auto;
+        width: 95%;
+        height: 35px;
+        display: flex;
+        align-items: center;
+    }
+    .sectionsLxt>p{
+        width: 13%;
+        height: 30px;
+        margin-top: 10px;
+        text-align: center;
+        line-height: 30px;
+    }
+    .sectionsLxt>input{
+        width: 200px;
+        height: 30px;
+        margin-right: 2%;
+        border: 0.5px dashed #ccc;  /* dashed 虚线 */
+        outline: none;/* 去掉input外边框的 蓝色线 */
+        border-radius: 4px;
+    }
+    .sectionsLxt>button{
+        width: 70px;
+        height: 30px;
+        margin-right: 2%;
+        border-radius: 4px;
+        border: 0;  
+        border: 1px solid #A3D0FD;
+        background: #E6F1FC;
+        color: #1890FF;
+    }
+    .footerLxt{
+        width: 90%;
+        height: 35px;
+        background: #D0D0D0;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footerLxt>p{
+        width: 50%;
+        height: 25px;
+        line-height: 25px;
+        margin-top: 10px;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footerLxt>p>span{
+        width: 50%;
+        border:0.5px solid #ccc;
+        background: #fff;
+        border-radius: 4px;
+        font-size: 12px;
+        text-align: center;
+        padding: 0 15px;
+    }
+    .kuangLxt{
+        width: 320px;
+        height: 222px;
+        border: 1px solid #ccc;
+        background: #fff;
+        position: fixed;
+        /* flex-direction: column;
+        display: flex;
+        justify-content: space-around;
+        align-items: center; */
+        top:35%;
+        left: 35%;
+        transition: all 2s;
+    }
+    .kuangLxt>.ps>{
+        width: 90%;
+        height: 35px;
+        margin: 5px auto;
+    }
+    .kuangLxt>.ps>.timeLxt{
+        width: 70%;
+        height: 30px;
+        outline: none;
+    }
+    .kuangLxt>.ps>.timeBtn{
+        width: 20%;
+        height: 30px;
+        background: #E6F1FC;
+        color: #1890FF;
+        outline: none;
+        border:0;
+    }
+    .kuangLxt>.strFalg{
+        width: 90%;
+        height: 95px;
+    }
+    .kuangLxt>.strFalg>p>{
+        width: 100%;
+        height: 30px;
+        font-size: 12px;
+        line-height: 30px;
+    }
+    .kuangLxt>.strFalg>p>input{
+        width: 70%;
+        height: 30px;
+        outline: none;
+        margin: 0 20px;
+    }
+    .kuangLxt>.strFalg>p>textarea{
+        width: 60%;
+        height: 40px;
+        outline: none;
+        margin: 0 20px;
+    }
+    .kuangLxt>.kuangFoot{
+        width: 85%;
+        height: 40px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .kuangLxt>.kuangFoot>.btnOk{
+        width: 15%;
+        height: 25px;
+        background: #1890FF;
+        color: #E6F1FC;
+        outline: none;
+        border:0;
+    }
+    .kuangLxt>.kuangFoot>.btnNo{
+        width: 15%;
+        height: 25px;
+        background: #E6F1FC;
+        color: #1890FF;
+        outline: none;
+        border:0;
+    }
 }
