@@ -14,7 +14,7 @@ function Login () {
     let arr =["登入","注册"]
 
     let handleSubmit =async ()=>{//登录 注册
-        if (str=="登入") {
+        if (str==="登入") {
             let time=check?"24":"0";//判断自动登录时长
             let result = await UserLogin({
                 "username":username,
@@ -29,7 +29,7 @@ function Login () {
                 console.log("登录失败，请去注册")
             }
         }
-        if (str=="注册") {
+        if (str==="注册") {
             console.log(str,'str')
             let result = await UserRegister({
                 "username":username,
@@ -75,13 +75,13 @@ function Login () {
                         setPassword(e.target.value)
                 }}/>
                 {
-                    str=="注册"&&
+                    str==="注册"&&
                     <input type="text" placeholder="请输入手机号"  className={styles.ipt} value={phone} onChange={(e)=>{
                         setPhone(e.target.value)
                     }}/>
                 }
                 {
-                    str=="登入"&&
+                    str==="登入"&&
                     <div className={styles.pCheck}> <input type="checkbox" checked={check} onChange={(e)=>{
                         setCheck(e.target.checked)
                     }}/>两周内自动登录</div>

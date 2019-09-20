@@ -1,42 +1,34 @@
-import React, {Component} from 'react';
-import {Modal} from 'antd';
+/* eslint-disable no-unused-vars */
+import React, { useState, useEffect } from "react";
+import { Modal } from "antd";
 
-class ModalsRemove extends Component {
-    state = {
-        loading: false,
-        visible: false,
-    }
+function ModalsRemove(props) {
+  //console.log(props);
+  const [loading, setLoading] = useState(false);
+  const [visible, setVisible] = useState(false);
 
-    handleOk(e) {
-        this.props.fromSon(false);
-        this.setState({
-            visible: false,
-        });
-    }
+  function handleOk(e) {
+    props.fromSon(false);
+     setVisible(false);
+  }
 
-    handleCancel(e) {
-        this.props.fromSon(false);
-        this.setState({
-            visible: false,
-        });
-    }
+  function handleCancel(e) {
+    props.fromSon(false);
+    setVisible(false);
+  }
 
-    render() {
-        const { visible } = this.props;
-        return (
-                // eslint-disable-next-line react/jsx-no-undef
-                <Modal
-                    visible={visible}
-                    title="你确定删除吗"
-                    placement="topRight"
-                    onConfirm={this.handleOk.bind(this)}
-                    onCancel={this.handleCancel.bind(this)}
-                    okText="确定"
-                    cancelText="取消"
-                   >
-                </Modal>
-        )
-    }
+  return (
+    // eslint-disable-next-line react/jsx-no-undef
+    <Modal
+      visible={props.visible}
+      title="你确定删除吗"
+      // eslint-disable-next-line no-undef
+      onConfirm={handleOk}
+      onCancel={handleCancel}
+      okText="确定"
+      cancelText="取消"
+    ></Modal>
+  );
 }
 
 export default ModalsRemove;
