@@ -23,7 +23,7 @@ function Login () {
             })
             // console.log(username,'username',password,'password',time,'time')
             console.log(result)
-            if (result.data.code) {
+            if (result.data.code==1) {
                 console.log('登录成功')
             }else{
                 console.log("登录失败，请去注册")
@@ -38,7 +38,7 @@ function Login () {
             })
             // console.log(username,'username',password,'password',phone,'phone')
             console.log(result)
-            if (result.data.code) {
+            if (result.data.code==1) {
                 console.log('注册成功')
             }else{
                 console.log("注册失败，请重新注册")

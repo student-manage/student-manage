@@ -1,0 +1,40 @@
+*{
+    margin: 0;padding: 0;
+}
+@media screen and (min-width:1024px) and (max-width:2000px){
+    .showLxt{
+        width: 1440px;
+        height: auto;
+        margin: 0 auto;
+        background: #F5F5F5;
+    }
+    .HshowHeaderLxt{
+        width: 100%;
+        height: 100px;
+        left: 0px;
+        top: 0px;
+        line-height: 100px;
+        background-color: rgba(0, 118, 255, 1);
+        color: rgba(255, 255, 255, 1);
+        font-size: 28px;
+        text-align: center;
+        font-family: Roboto;
+        border: 1px solid rgba(187, 187, 187, 1);
+    }
+    .showNavLxt{
+        margin: 21px auto;
+        width: 1350px;
+        height: 126px;
+        line-height: 20px;
+        text-align: center;
+        border: 1px solid rgba(187, 187, 187, 1);
+    }
+}
+
+@media screen and (min-width:751px) and (max-width:1023px){
+    
+}
+
+@media screen and (min-width:10px) and (max-width: 750px){
+    
+}
