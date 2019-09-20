@@ -15,6 +15,7 @@ function ModalsRemove(props) {
   function handleCancel(e) {
     props.fromSon(false);
     setVisible(false);
+    //console.log(e,"删除")
   }
 
   return (

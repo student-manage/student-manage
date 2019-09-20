@@ -1,107 +1,110 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 /*
- * @Author: geng 
- * @Date: 2019-09-19 23:44:10 
+ * @Author: geng
+ * @Date: 2019-09-19 23:44:10
  * @Last Modified by: geng
- * @Last Modified time: 2019-09-20 14:22:04
+ * @Last Modified time: 2019-09-20 17:23:02
  */
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import style from "./index.css";
 import { Table, TreeSelect } from "antd";
 import ModalsRemove from "@/components/ModalsRemove";
 import ModalsEdit from "@/components/ModalsEdit";
+import { grade } from "@/services/grade";
+import { edit } from "@/services/edit";
+import { student } from "@/services/student";
 
 const { TreeNode } = TreeSelect;
 
 function Grade() {
-
   const [showModal, setShowModal] = useState(false);
   const [editModal, setEditModal] = useState(false);
   const [value, setValue] = useState();
   const [data, setData] = useState([
     {
       key: "1",
-      序号: "1",
-      日期: "1111111",
-      理论: 89,
-      技能: "New York No. 1 Lake Park",
-      分析和解决:
+      stuid: "1",
+      record_date: "1111111",
+      theory_score: "89",
+      skill_score: "New York No. 1 Lake Park",
+      analysis:
         "对方过后就给范德萨的风格和接口规范的撒上辅导过后就会看见割发代首撒的风格和减肥的撒的风格和",
-      是否周考: "否"
+      week_record: "0"
     },
     {
       key: "2",
-      序号: "2",
-      日期: "1111111",
-      理论: 89,
-      技能: "New York No. 1 Lake Park",
-      分析和解决:
+      stuid: "2",
+      record_date: "1111111",
+      theory_score: "89",
+      skill_score: "New York No. 1 Lake Park",
+      analysis:
         "对方过后就给范德萨的风格和接口规范的撒上辅导过后就会看见割发代首撒的风格和减肥的撒的风格和",
-      是否周考: "是"
+      week_record: "0"
     },
     {
       key: "3",
-      序号: "3",
-      日期: "1111111",
-      理论: 89,
-      技能: "New York No. 1 Lake Park",
-      分析和解决:
+      stuid: "3",
+      record_date: "1111111",
+      theory_score: "89",
+      skill_score: "New York No. 1 Lake Park",
+      analysis:
         "对方过后就给范德萨的风格和接口规范的撒上辅导过后就会看见割发代首撒的风格和减肥的撒的风格和",
-      是否周考: "否"
+      week_record: "1"
     },
     {
       key: "4",
-      序号: "4",
-      日期: "1111111",
-      理论: 89,
-      技能: "New York No. 1 Lake Park",
-      分析和解决:
+      stuid: "4",
+      record_date: "1111111",
+      theory_score: "89",
+      skill_score: "New York No. 1 Lake Park",
+      analysis:
         "对方过后就给范德萨的风格和接口规范的撒上辅导过后就会看见割发代首撒的风格和减肥的撒的风格和",
-      是否周考: "否"
+      week_record: "1"
     }
-  ])
+  ]);
   const editSource = (info, e) => {
-    setEditModal(true)
-  }
-  // eslint-disable-next-line no-undef
-  const removeSource = (info, e) => {
-    setShowModal(true)
+    setEditModal(true);
+    //console.log(info, "info");
   };
   // eslint-disable-next-line no-undef
-  const closeModal = (status) => {
+  const removeSource = (info, e) => {
+    setShowModal(true);
+  };
+  // eslint-disable-next-line no-undef
+  const closeModal = status => {
     setShowModal(status);
-    setEditModal(status)
+    setEditModal(status);
   };
   const onChange = value => {
     console.log(value);
-    setValue(value)
+    setValue(value);
   };
   const [columns, setColumns] = useState([
     {
-      title: "序号",
-      dataIndex: "序号",
+      title: "stuid",
+      dataIndex: "stuid",
       render: text => <a>{text}</a>
     },
     {
-      title: "日期",
-      dataIndex: "日期"
+      title: "record_date",
+      dataIndex: "record_date"
     },
     {
-      title: "理论",
-      dataIndex: "理论"
+      title: "theory_score",
+      dataIndex: "theory_score"
     },
     {
-      title: "技能",
-      dataIndex: "技能"
+      title: "skill_score",
+      dataIndex: "skill_score"
     },
     {
-      title: "分析和解决",
-      dataIndex: "分析和解决"
+      title: "analysis",
+      dataIndex: "analysis"
     },
     {
-      title: "是否周考",
-      dataIndex: "是否周考"
+      title: "week_record",
+      dataIndex: "week_record"
     },
     {
       title: "操作",
@@ -109,23 +112,17 @@ function Grade() {
 
       render: (text, record) => (
         <span>
-          <a
-            className="btn-table-edit"
-            onClick={editSource.bind(this, text)}
-          >
+          <a className="btn-table-edit" onClick={editSource}>
             编辑&nbsp;、
           </a>
-          <a
-            className="btn-table-edit"
-            onClick={removeSource.bind(this, text)}
-          >
+          <a className="btn-table-edit" onClick={removeSource}>
             删除
           </a>
         </span>
       )
     }
-  ])
-
+  ]);
+  
   return (
     <div className={style.grade}>
       <div className={style.title}>XX学生日周考试成绩统计表</div>
@@ -135,12 +132,12 @@ function Grade() {
           <span className={style.stduent}>学生：XXX</span>
         </div>
         <div className={style.right}>
-          { /*<input className={style.choose} />*/}
+          {/*<input className={style.choose} />*/}
           <TreeSelect
             showSearch
-            style={{ width: 224,marginRight:49,height:40 }}
+            style={{ width: 224, marginRight: 49, height: 40 }}
             value={value}
-            dropdownStyle={{ maxHeight: 258, overflow: 'auto' }}
+            dropdownStyle={{ maxHeight: 258, overflow: "auto" }}
             placeholder="Please select"
             allowClear
             treeDefaultExpandAll
@@ -152,7 +149,11 @@ function Grade() {
                 <TreeNode value="leaf2" title="your leaf" key="random1" />
               </TreeNode>
               <TreeNode value="parent 1-1" title="parent 1-1" key="random2">
-                <TreeNode value="sss" title={<b style={{ color: '#08c' }}>sss</b>} key="random3" />
+                <TreeNode
+                  value="sss"
+                  title={<b style={{ color: "#08c" }}>sss</b>}
+                  key="random3"
+                />
               </TreeNode>
             </TreeNode>
           </TreeSelect>
@@ -178,7 +179,7 @@ function Grade() {
         ) : null}
       </div>
     </div>
-  )
+  );
 }
 
 export default Grade;

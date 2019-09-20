@@ -10,6 +10,7 @@ function ModalsEdit(props) {
   const [visible, setVisible] = useState(false);
   function handleOk(e) {
     props.fromSon(false);
+    //console.log(props,"edit")
     setVisible(false);
   }
 
