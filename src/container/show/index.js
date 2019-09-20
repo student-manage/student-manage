@@ -6,7 +6,7 @@ function Show() {
     let arr=["1703C","1703E","1703F"]
     const [con,setCon]=useState(0)
     const [falg,setFalg]=useState(true)//自动登录
-    const [btnFalg,setbtnFalg]=useState(false)//显示弹出框
+    const [btnFalg,setbtnFalg]=useState(true)//显示弹出框
     const [Time,setTime]=useState('')//获取时间
     const [str,setStr]=useState('')//判断 成绩 和 分析
     const [strFalg,setStrflag]=useState(true)//判断 成绩 和 分析 显示 规定
