@@ -4,7 +4,7 @@
  * @Author: geng
  * @Date: 2019-09-19 23:44:10
  * @Last Modified by: geng
- * @Last Modified time: 2019-09-20 17:23:02
+ * @Last Modified time: 2019-09-20 20:44:46
  */
 import React, { useState, useEffect } from "react";
 import style from "./index.css";
@@ -82,33 +82,33 @@ function Grade() {
   };
   const [columns, setColumns] = useState([
     {
-      title: "stuid",
+      title: "序号",
       dataIndex: "stuid",
       render: text => <a>{text}</a>
     },
     {
-      title: "record_date",
+      title: "日期",
       dataIndex: "record_date"
     },
     {
-      title: "theory_score",
+      title: "理论",
       dataIndex: "theory_score"
     },
     {
-      title: "skill_score",
+      title: "技能",
       dataIndex: "skill_score"
     },
     {
-      title: "analysis",
+      title: "分析和解决",
       dataIndex: "analysis"
     },
     {
-      title: "week_record",
+      title: "是否周考",
       dataIndex: "week_record"
     },
     {
       title: "操作",
-      key: "操作",
+      dataIndex: "操作",
 
       render: (text, record) => (
         <span>
@@ -133,9 +133,8 @@ function Grade() {
         </div>
         <div className={style.right}>
           {/*<input className={style.choose} />*/}
-          <TreeSelect
+          <TreeSelect className={style.tree}
             showSearch
-            style={{ width: 224, marginRight: 49, height: 40 }}
             value={value}
             dropdownStyle={{ maxHeight: 258, overflow: "auto" }}
             placeholder="Please select"

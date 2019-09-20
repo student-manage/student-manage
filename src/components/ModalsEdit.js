@@ -19,7 +19,7 @@ function ModalsEdit(props) {
     setVisible(false);
   }
   function onChange(e) {
-    console.log(`checked = ${e.target.checked}`);
+    //console.log(`checked = ${e.target.checked}`);
   }
   return (
     // eslint-disable-next-line react/jsx-no-undef
@@ -42,8 +42,10 @@ function ModalsEdit(props) {
           <Input placeholder="0-100之间数字" />
         </Form.Item>
         <Form.Item label="">
-          <Checkbox onChange={onChange}>日考</Checkbox>
-          <Checkbox onChange={onChange}>周考</Checkbox>
+          <div style={{marginLeft:100}}>
+            <Checkbox onChange={onChange}>日考</Checkbox>
+            <Checkbox onChange={onChange}>周考</Checkbox>
+          </div>
         </Form.Item>
         <Form.Item label="分析解决方案">
           <TextArea rows={4} />
