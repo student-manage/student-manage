@@ -4,7 +4,7 @@
  * @Author: geng
  * @Date: 2019-09-19 23:44:10
  * @Last Modified by: geng
- * @Last Modified time: 2019-09-20 20:44:46
+ * @Last Modified time: 2019-09-21 14:30:02
  */
 import React, { useState, useEffect } from "react";
 import style from "./index.css";
@@ -49,7 +49,7 @@ function Grade() {
       theory_score: "89",
       skill_score: "New York No. 1 Lake Park",
       analysis:
-        "对方过后就给范德萨的风格和接口规范的撒上辅导过后就会看见割发代首撒的风格和减肥的撒的风格和",
+        "对方过后就给范的风格和接口规范的撒上辅导过后就会看见割发代首撒的风格和减肥的撒的风格和",
       week_record: "1"
     },
     {
