@@ -1,4 +1,3 @@
-
 import axios from 'axios';
 
 const instance = axios.create({
@@ -24,7 +23,7 @@ instance.interceptors.response.use(function (response) {
   return Promise.reject(error);
 });
 
-export default instance
+export default instance;
 
 // import fetch from 'dva/fetch';
 

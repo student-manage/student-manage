@@ -1,0 +1,305 @@
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+body,html{
+    width:100%;
+    height: 100%;
+}
+    :global(#root){
+    width:100%;
+    height:100%;
+}
+:global(.wrap){
+    width:100%;
+    height:100%;
+    /* overflow-y: auto; */
+}
+@media screen and (max-width:1920px) {
+:global(.page_top){
+    width:100%;
+    height:302px;
+    display:flex;
+    flex-direction: column;
+}
+:global(.page_top_top){
+    width:100%;
+    height: 100px;
+    background: #0076FF;
+}
+:global(.page_top_bottom){
+    width:100%;
+    height:202px;
+    background: #fff;
+}
+:global(.page_bottom){
+    width:100%;
+    flex:1
+}
+    :global(.page_top_top span){
+        left: 0px;
+        top: 0px;
+        line-height: 41px;
+        background-color: rgba(0, 118, 255, 1);
+        color: rgba(255, 255, 255, 1);
+        font-size: 28px;
+        text-align: center;
+        font-family: Roboto;
+        border: 1px solid rgba(187, 187, 187, 1);
+        width:100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    :global(.choose){
+        width:100%;
+        height: 144px;
+        display: flex;
+    }
+    :global(.choose_left){
+        width:4px;
+        padding:27px 43px;
+    }
+    :global(.choose_left>span){
+        width:153px;
+        display: flex;
+    }
+    :global(.choose_right){
+        width:100%;
+        padding:27px 43px;
+    }
+    :global(.choose_right>ul){
+        width:100%;
+        height:44px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    :global(.choose_right>ul li){
+        width:61px;
+        height:24px;
+        line-height: 24px;
+        text-align:center;
+        background: #ccc;
+        border:1px solid #000;
+        margin-left:3px;
+        margin-top:3px;
+    }
+    :global(.choose_right>ul li:nth-child(1)){
+       background: #1890FF;
+    }
+    :global(.people_roll){
+        width:100%;
+        height: 60px;
+        display: flex;
+    }
+    :global(.roll_left){
+        width:56px;
+        padding:0px 43px;
+    }
+    :global(.roll_left>span){
+        width:56px;
+        display: flex;
+    }
+    :global(.roll_right){
+        flex:1;
+        display: flex;
+        justify-content: space-between;
+    }
+        :global(.roll_right>.left){
+            padding:0px 43px;
+    }
+    :global(.line){
+        width:100%;
+        height:400px;
+        background:#fff;
+        margin-top:10px;
+    }
+        :global(.echertsbot){
+        width:100%;
+        height:87px;
+    }
+    :global(.echertsbot){
+        width:100%;
+        height:87px;
+        display: flex;
+    }
+        :global(.echertsbot_top){
+        width:176px;
+        height:87px;
+    }
+      :global(.echertsbot_top p){
+        /* width:176px; */
+        display: flex;
+        height:20px;
+        /* flex-wrap: wrap; */
+        align-items: center;
+        justify-content: center;
+    }
+    :global(.echertsbot_bottom){
+        flex:1;
+        height:90px;
+        background: #009688;
+    }
+        :global(.line1){
+        width:100%;
+        height:400px;
+        background:#fff;
+        margin-top:30px;
+    }
+    :global(.last_box){
+        width:100%;
+        height:232px;
+        padding:0px 10px;
+    }
+    :global(.last_box div){
+        width:100%;
+        height:50px;
+    }
+    
+}
+@media screen and (max-width:375px){
+    html, body {
+    height: 100%;
+    width: 100%;
+    font-size: calc(100/750*100vw);
+  }
+  :global(.page_top){
+    width:100%;
+    height:3.02rem;
+    display:flex;
+    flex-direction: column;
+}
+:global(.page_top_top){
+    width:100%;
+    height: 1rem;
+    background: #0076FF;
+}
+:global(.page_top_bottom){
+    width:100%;
+    height:2.02rem;
+    background: #fff;
+}
+:global(.page_bottom){
+    width:100%;
+    flex:1
+}
+    :global(.page_top_top span){
+        left: 0rem;
+        top: 0rem;
+        line-height: 0.41rem;
+        background-color: rgba(0, 118, 255, 1);
+        color: rgba(255, 255, 255, 1);
+        font-size: 0.28rem;
+        text-align: center;
+        font-family: Roboto;
+        border: 0.01rem solid rgba(187, 187, 187, 1);
+        width:100%;
+        height: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    :global(.choose){
+        width:100%;
+        height: 1.44rem;
+        display: flex;
+    }
+    :global(.choose_left){
+        width:0.04rem;
+        padding:0.27rem 0.43rem;
+    }
+    :global(.choose_left>span){
+        width:1.53rem;
+        display: flex;
+    }
+    :global(.choose_right){
+        width:100%;
+        padding:0.27rem 0.43rem;
+    }
+    :global(.choose_right>ul){
+        width:100%;
+        height:0.44rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    :global(.choose_right>ul li){
+        width:0.61rem;
+        height:0.24rem;
+        line-height: 0.24rem;
+        text-align:center;
+        background: #ccc;
+        border:1px solid #000;
+        margin-left:0.03rem;
+        margin-top:0.03rem;
+    }
+    :global(.choose_right>ul li:nth-child(1)){
+       background: #1890FF;
+    }
+    :global(.people_roll){
+        width:100%;
+        height: 0.6rem;
+        display: flex;
+    }
+    :global(.roll_left){
+        width:0.56rem;
+        padding:0rem 0.43rem;
+    }
+    :global(.roll_left>span){
+        width:0.56rem;
+        display: flex;
+    }
+    :global(.roll_right){
+        flex:1;
+        display: flex;
+        justify-content: space-between;
+    }
+        :global(.roll_right>.left){
+            padding:0rem 0.43rem;
+    }
+        :global(.line){
+        width:100%;
+        height:4rem;
+        background:#fff;
+        margin-top:0.1rem;
+    }
+    :global(.echertsbot){
+        width:100%;
+        height:0.87rem;
+        display: flex;
+       
+    }
+      :global(.echertsbot_top){
+        width:1.76rem;
+        height:0.87rem;
+    }
+    :global(.echertsbot_top p){
+        /* width:176px; */
+        display: flex;
+        height: 0.2rem;
+        /* flex-wrap: wrap; */
+        align-items: center;
+        justify-content: center;
+    }
+    :global(.echertsbot_bottom){
+        flex:1;
+        height:0.9rem; 
+        background: #009688;
+    }
+    :global(.line1){
+        width:100%;
+        height:4rem;
+        background:#fff;
+        margin-top:0.3rem;
+    }
+    :global(.last_box){
+        width:100%;
+        height:2.32rem;
+        padding:0.1rem 0.01rem
+    }
+        :global(.last_box div){
+        width:100%;
+        height:0.05rem;
+    }
+}
