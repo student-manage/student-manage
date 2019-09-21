@@ -16,17 +16,16 @@ body,html{
     height:100%;
     /* overflow-y: auto; */
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width:1024px) and (min-width:376px) {
 :global(.page_top){
     width:100%;
-    height:30.2rem;
+    height:302px;
     display:flex;
     flex-direction: column;
 }
 :global(.page_top_top){
     width:100%;
     height: 100px;
-    height: 10rem;
     background: #0076FF;
 }
 :global(.page_top_bottom){
@@ -160,7 +159,7 @@ body,html{
     }
     
 }
-@media screen and (max-width:375px){
+@media screen and (max-width:376px){
     html, body {
     height: 100%;
     width: 100%;
@@ -180,7 +179,6 @@ body,html{
 :global(.page_top_bottom){
     width:100%;
     height:2.02rem;
-    height:20.2rem;
     background: #fff;
 }
 :global(.page_bottom){
@@ -190,67 +188,118 @@ body,html{
     :global(.page_top_top span){
         left: 0rem;
         top: 0rem;
-        line-height: 4.1rem;
+        line-height: 0.41rem;
         background-color: rgba(0, 118, 255, 1);
         color: rgba(255, 255, 255, 1);
-        font-size: 2.8rem;
+        font-size: 0.28rem;
         text-align: center;
         font-family: Roboto;
-        border: 0.1rem solid rgba(187, 187, 187, 1);
+        border: 0.01rem solid rgba(187, 187, 187, 1);
         width:100%;
-        height: 10rem;
+        height: 1rem;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     :global(.choose){
         width:100%;
-        height: 14.4rem;
+        height: 1.44rem;
         display: flex;
     }
     :global(.choose_left){
-        width:0.4rem;
-        padding:2.7rem 4.3rem;
+        width:0.04rem;
+        padding:0.27rem 0.43rem;
     }
     :global(.choose_left>span){
-        width:15.3rem;
+        width:1.53rem;
         display: flex;
     }
     :global(.choose_right){
         width:100%;
-        padding:2.7rem 4.3rem;
+        padding:0.27rem 0.43rem;
     }
     :global(.choose_right>ul){
         width:100%;
-        height:4.4rem;
+        height:0.44rem;
         display: flex;
         flex-wrap: wrap;
     }
     :global(.choose_right>ul li){
-        width:6.1rem;
-        height:2.4rem;
-        line-height: 2.4rem;
+        width:0.61rem;
+        height:0.24rem;
+        line-height: 0.24rem;
         text-align:center;
         background: #ccc;
         border:1px solid #000;
-        margin-left:0.3rem;
-        margin-top:0.3rem;
+        margin-left:0.03rem;
+        margin-top:0.03rem;
     }
     :global(.choose_right>ul li:nth-child(1)){
        background: #1890FF;
     }
     :global(.people_roll){
         width:100%;
-        height: 6rem;
+        height: 0.6rem;
         display: flex;
     }
     :global(.roll_left){
-        width:5.6rem;
-        padding:0rem 4.3rem;
+        width:0.56rem;
+        padding:0rem 0.43rem;
+    }
+    :global(.roll_left>span){
+        width:0.56rem;
+        display: flex;
     }
     :global(.roll_right){
         flex:1;
         display: flex;
         justify-content: space-between;
+    }
+        :global(.roll_right>.left){
+            padding:0rem 0.43rem;
+    }
+        :global(.line){
+        width:100%;
+        height:4rem;
+        background:#fff;
+        margin-top:0.1rem;
+    }
+    :global(.echertsbot){
+        width:100%;
+        height:0.87rem;
+        display: flex;
+       
+    }
+      :global(.echertsbot_top){
+        width:1.76rem;
+        height:0.87rem;
+    }
+    :global(.echertsbot_top p){
+        /* width:176px; */
+        display: flex;
+        height: 0.2rem;
+        /* flex-wrap: wrap; */
+        align-items: center;
+        justify-content: center;
+    }
+    :global(.echertsbot_bottom){
+        flex:1;
+        height:0.9rem; 
+        background: #009688;
+    }
+    :global(.line1){
+        width:100%;
+        height:4rem;
+        background:#fff;
+        margin-top:0.3rem;
+    }
+    :global(.last_box){
+        width:100%;
+        height:2.32rem;
+        padding:0.1rem 0.01rem
+    }
+        :global(.last_box div){
+        width:100%;
+        height:0.05rem;
     }
 }

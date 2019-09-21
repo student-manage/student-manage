@@ -1,7 +1,7 @@
 import React,{ useState, useEffect } from 'react';
 import { Switch,Button } from 'antd';
 import 'antd/dist/antd.css';
-import "./index.css";
+import  "./index.css";
 import echarts from 'echarts';
 let onChange=(checked)=>{
     console.log(`switch to ${checked}`);
@@ -172,15 +172,58 @@ const President=props=>{
                                     张三,张立,王强(3/人)
                                 </div>
                                 <div className="right">
-                                    <Switch defaultChecked onChange={onChange} />
+                                    <Switch defaultChecked onChange={onChange} />柱形图,线图
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="page_bottom"></div>
+                <div className="page_bottom">
+                    <div className="line">
+                        <div id="pie" style={{ width: '800px', height: '400px' }}></div>
+                        <div className="echertsbot">
+                            <div className="echertsbot_top">
+                                <p>2019-08-30</p>
+                                <p>今日分析及解决方案</p>
+                                <p>点击查看历史记录</p>   
+                            </div>
+                            <div className="echertsbot_bottom">
+                                撒的风格好的撒的风格和公司大富大贵好撒的风格好的撒的风格和公司大富大贵好撒的风格好的撒的风格和公司大富大贵好撒的风格好的撒的风格和公司大富大贵好撒的风格好的撒的风格和公司大富大贵好撒的风格好的撒的风格和公司和公司大富大贵好撒的风格好的撒的风格和公司大富大贵好撒的风格好的撒的风格和公司大富大贵好撒的风格好的撒的风格和公司大富大贵好
+                            </div>
+                        </div>
+                        <div className="line1">
+                            <div id="pies" style={{ width: '800px', height: '400px' }}></div>
+                        <div className="echertsbot">
+                            <div className="echertsbot_top">
+                                <p>2019-08-30</p>
+                                <p>今日分析及解决方案</p>
+                                <p>点击查看历史记录</p>
+                            </div>
+                            <div className="echertsbot_bottom">
+                                撒的风格好的撒的风格和公司大富大贵好撒的风格好的撒的风格和公司大富大贵好撒的风格好的撒的风格和公司大富大贵好撒的风格好的撒的风格和公司大富大贵好撒的风格好的撒的风格和公司大富大贵好撒的风格好的撒的风格和公司和公司大富大贵好撒的风格好的撒的风格和公司大富大贵好撒的风格好的撒的风格和公司大富大贵好撒的风格好的撒的风格和公司大富大贵好
+                            </div>
+                            
+                        </div>
+                        <div className="last_box">
+                                    <div>
+                                        <p>2019-08-21</p>
+                                        <p>撒的风格好的撒的风格和公司大富大贵好撒的风格好的撒的风格和公司大</p>
+                                    </div>
+                                    <div>
+                                        <p>2019-08-20</p>
+                                        <p>secondary text</p>
+                                    </div>
+                                    <div>
+                                        <p>2019-08-20</p>
+                                        <p>secondary text</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
         );
-}
+    }
 
 export default President;
