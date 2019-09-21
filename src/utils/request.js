@@ -26,6 +26,7 @@ instance.interceptors.response.use(function (response) {
 
 export default instance
 
+
 // import fetch from 'dva/fetch';
 
 // function parseJSON(response) {
