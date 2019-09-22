@@ -4,7 +4,7 @@
  * @Author: geng
  * @Date: 2019-09-19 23:44:10
  * @Last Modified by: geng
- * @Last Modified time: 2019-09-21 14:30:02
+ * @Last Modified time: 2019-09-22 21:01:38
  */
 import React, { useState, useEffect } from "react";
 import style from "./index.css";
@@ -124,15 +124,16 @@ function Grade() {
   ]);
   
   return (
-    <div className={style.grade}>
-      <div className={style.title}>XX学生日周考试成绩统计表</div>
-      <div className={style.nav}>
-        <div className={style.left}>
-          <span className={style.teacher}>讲师：XXX</span>
-          <span className={style.stduent}>学生：XXX</span>
+    <div className={`${style.grade}`}>
+      <div className={`${style.title} ${style.border}`}>
+      XX学生日周考试成绩统计表
+      </div>
+      <div className={`${style.nav} ${style.border} ${style.color}`}>
+        <div className={`${style.left}`}>
+          <span className={`${style.teacher} ${style.font}`}>讲师：XXX</span>
+          <span className={`${style.stduent} ${style.font}`}>学生：XXX</span>
         </div>
-        <div className={style.right}>
-          {/*<input className={style.choose} />*/}
+        <div className={`${style.right}`}>
           <TreeSelect className={style.tree}
             showSearch
             value={value}
@@ -158,7 +159,7 @@ function Grade() {
           </TreeSelect>
         </div>
       </div>
-      <div className={style.table}>
+      <div className={`${style.tbble} ${style.border} ${style.color}`}>
         <Table columns={columns} dataSource={data} size="middle" />
         {showModal ? (
           <ModalsRemove
